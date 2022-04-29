@@ -11,7 +11,7 @@ pipeline {
     stage('Compile') {
       steps {
         // Compile the app and its dependencies
-        git branch: 'main', url: 'https://github.com/dineshcode97/SunFlowerProject.git'
+        git branch: 'main', url: 'https://github.com/dineshcode97/sunflower.git'
         sh './gradlew compileDebugSources'
       }
     }
